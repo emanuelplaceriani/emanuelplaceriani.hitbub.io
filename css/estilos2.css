@@ -1,0 +1,246 @@
+*{
+   margin: 0;
+   padding: 0;
+   box-sizing: border-box;
+}
+
+body{
+   background: url(../img/fondo-textura.jpg)!important;
+   background-position: center;
+}
+
+
+header .navbar{
+   margin-top: 10px;
+   font-size: 16px;
+}
+
+
+.navbar-nav .nav-item .nav-link {
+   margin-left: 50px;
+   color: #fff;
+}
+
+.navbar img{
+   border-radius: 100px;
+   max-width: 65px;
+}
+.navbar-nav a{
+   font-size: 18px;
+}
+
+
+.main .video{
+   margin-top: -90px;
+   height: 770px;
+}
+
+.main .nosotros{
+
+   /*background: #d4d4d4;
+   height: 800px;*/
+   background: url(../img/fondo-textura.jpg)!important;
+   background-position: center;
+   padding: 100px 0;
+   height: 900px;
+}
+
+.main .nosotros .container{
+   margin-top: 60px;
+   padding-top: 60px;
+}
+
+.main .nosotros .container .foto-nosotros img{
+   width: 100%;
+   height: auto;
+   margin-top: 10px;
+}
+
+.main .nosotros .textos-nosotros{
+   margin-top: 20px;
+}
+
+.nosotros .textos-nosotros .titulo
+{
+   margin: 40px 5px;
+   line-height: 60px;
+   font-size: 60px;
+}
+
+.nosotros .textos-nosotros .linea
+{
+   margin: 50px 0;
+   height: 2px;
+   width: 100%;
+   background: #bdbaba;
+}
+
+.nosotros .texto 
+{
+   color:#722c19;
+   font-size: 25px;
+}
+
+
+/* PARA COMER - TOMAR*/
+
+.main .paraComerTomar .contenedor
+{
+   display: flex;
+   align-items: center;
+   justify-content: space-between;
+}
+
+.main .paraComerTomar .contenedor .carta{
+   text-align: center;
+   margin: 15px 40px;
+   width: 50%;
+   height: 600px;
+}
+
+.main .paraComerTomar .contenedor .carta .texto {
+   margin-top: 20%;
+   line-height: 40px;
+   font-size: 25px;
+   font-weight: 400;
+   color: azure;
+}
+
+.main .paraComerTomar .contenedor .uno{
+   background-image: url("../img/pizza.jpg");
+   background-size: 100%;
+   background-position: center;
+   background-repeat: no-repeat;
+   height: 100%;
+}
+
+.main .paraComerTomar .contenedor .dos{
+   background-image: url("../img/cafe1.jpg");
+   background-size: 100%;
+   background-position: center;
+   background-repeat: no-repeat;
+   height: 100%;
+}
+
+/* GALERIA */
+
+.galeria{
+   height: 100%;
+   width: 100%;
+   display: block;
+}
+
+.galeria .titulo{
+   color: rgb(56, 55, 55);
+   margin: 70px;
+   font-size: 60px;
+   font-family: sans-serif;
+}
+
+.galeria .titulo span{
+   color: #722c19;
+}
+
+.galeria .fotos{
+   position: static;
+   height: auto;
+   max-height: fit-content;
+   display: grid;
+   grid-template-columns: auto auto auto auto auto;
+   grid-auto-flow: dense;
+   
+}
+
+.galeria .fotos img{
+   background-color: black;
+   position: relative;
+   width: 100%;
+   height: 100%;
+   max-width:100%;
+   max-height:100%;
+   opacity: 1;
+   transition: 0.3s ease;
+}
+
+.galeria .fotos .foto{
+   overflow: hidden;
+}
+
+.galeria .fotos .foto img:hover{
+   transform: scale(1.1);
+   overflow: hidden;
+   filter: grayscale(100%);
+}
+
+.galeria .fotos .foto:first-child
+{
+   grid-column-start: span 1;
+   grid-row-start: span 2;
+}
+
+.galeria .fotos .foto:last-child
+{
+   grid-column-start: span 2;
+   grid-row-start: span 1;
+}
+
+.galeria .fotos .foto:nth-child(2n+3){
+   grid-row-start: span 2;
+}
+
+.galeria .fotos .foto:nth-child(4n+5){
+   grid-column-start: span 2;
+}
+
+@media screen and (max-width: 1400px){
+
+   .galeria .fotos{
+      display: grid;
+      position: static;
+      grid-template-columns: auto auto auto;
+      grid-auto-flow: dense;
+   }
+
+   .galeria .fotos .foto:first-child
+   {
+      grid-column-start: 1;
+      grid-row-start: 2;
+   }
+   .galeria .fotos .ultima {
+      max-height: 50%;
+   }
+}
+
+@media screen and (max-width: 870px){
+   .galeria .fotos{
+      display: block;
+      position: static;
+      grid-template-columns: auto ;
+      grid-auto-flow: dense;
+      width: 100%  ;
+      height: auto;
+   }
+}
+
+ .ubicacion{
+    display: block;
+    margin: 40px 10px;
+    width: 100%;
+    height: auto;
+ }
+
+ footer .container{
+    background: #555;
+ }
+
+ footer .container .col{
+    width: 100%;
+    margin: 0 !important;
+ }
+
+ footer .container .facebook a{
+    padding: 20px 10px;
+    background: #3b5998 ;
+    color: #f2f2f2;
+    border-radius: 25px;
+ }
